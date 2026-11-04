@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 52" width="136" height="52">
+<defs><linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#A78BFA"/><stop offset=".5" stop-color="#E4E4E7"/><stop offset="1" stop-color="#A78BFA"/><animateTransform attributeName="gradientTransform" type="rotate" from="0 .5 .5" to="360 .5 .5" dur="4s" repeatCount="indefinite"/></linearGradient>
+<linearGradient id="sh" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<clipPath id="c"><rect x="1" y="1" width="134" height="50" rx="25"/></clipPath></defs>
+<rect x="1" y="1" width="134" height="50" rx="25" fill="#0D1117"/>
+<g clip-path="url(#c)"><rect y="0" width="60" height="52" fill="url(#sh)"><animate attributeName="x" values="-80;156" dur="3s" repeatCount="indefinite"/></rect></g>
+<rect x="1" y="1" width="134" height="50" rx="25" fill="none" stroke="url(#bd)" stroke-width="2"/>
+<text x="68.0" y="32" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="15" font-weight="700" letter-spacing="3" fill="#fff">GITHUB</text>
+</svg>

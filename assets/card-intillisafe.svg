@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 232" width="470" height="232">
+<defs><linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#047857"/><stop offset=".5" stop-color="#34D399"/><stop offset="1" stop-color="#047857"/><animateTransform attributeName="gradientTransform" type="rotate" from="0 .5 .5" to="360 .5 .5" dur="5s" repeatCount="indefinite"/></linearGradient>
+<linearGradient id="t" x1="0" x2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#34D399"/></linearGradient>
+<filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="30"/></filter>
+<clipPath id="c"><rect x="1" y="1" width="468" height="230" rx="18"/></clipPath></defs>
+<rect x="1" y="1" width="468" height="230" rx="18" fill="#0D1117"/>
+<g clip-path="url(#c)">
+<circle cx="430" cy="30" r="70" fill="#047857" opacity=".55" filter="url(#blur)"><animate attributeName="opacity" values=".35;.65;.35" dur="4s" repeatCount="indefinite"/></circle>
+<text x="452" y="218" text-anchor="end" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="84" font-weight="800" fill="#34D399" opacity=".07">04</text>
+</g>
+<rect x="1" y="1" width="468" height="230" rx="18" fill="none" stroke="url(#bd)" stroke-width="2"/>
+<text x="30" y="46" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="13" letter-spacing="3" fill="#34D399">PROJECT / 04</text>
+<text x="30" y="82" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="27" font-weight="800" fill="url(#t)">INTILLISAFE</text>
+<text x="30" y="108" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#A1A1AA">Intelligent document-workflow platform with AI-powered</text><text x="30" y="129" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#A1A1AA">processing and integrated backend infrastructure.</text>
+<g><rect x="30" y="166" width="87" height="26" rx="13" fill="#34D399" fill-opacity=".12" stroke="#34D399" stroke-opacity=".55"/><text x="73.5" y="183" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="12" fill="#E4E4E7">Next.js</text></g><g><rect x="125" y="166" width="111" height="26" rx="13" fill="#34D399" fill-opacity=".12" stroke="#34D399" stroke-opacity=".55"/><text x="180.5" y="183" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="12" fill="#E4E4E7">TypeScript</text></g><g><rect x="244" y="166" width="111" height="26" rx="13" fill="#34D399" fill-opacity=".12" stroke="#34D399" stroke-opacity=".55"/><text x="299.5" y="183" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="12" fill="#E4E4E7">PostgreSQL</text></g><g><rect x="363" y="166" width="46" height="26" rx="13" fill="#34D399" fill-opacity=".12" stroke="#34D399" stroke-opacity=".55"/><text x="386.0" y="183" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="12" fill="#E4E4E7">AI</text></g>
+<text x="30" y="218" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="12" fill="#34D399">→ live deployment</text>
+</svg>
