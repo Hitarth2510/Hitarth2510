@@ -23,7 +23,7 @@ jobs:
       - name: Generate stats card
         run: node .github/scripts/stats.mjs
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
           GH_LOGIN: ${{ github.repository_owner }}
           OUT_DIR: dist
 
@@ -31,8 +31,14 @@ jobs:
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
           outputs: |
-            dist/snake-dark.svg?palette=github-dark&color_snake=#22D3EE&color_dots=#161b22,#2e1065,#5b21b6,#8b5cf6,#c4b5fd
+            dist/snake-raw.svg?color_snake=#22D3EE&color_dots=#16161F,#3B0764,#6D28D9,#8B5CF6,#DDD6FE&color_dot_border=#0B0B14
+
+      - name: Style contribution graph
+        run: node .github/scripts/graph.mjs
+        env:
+          OUT_DIR: dist
 
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v4

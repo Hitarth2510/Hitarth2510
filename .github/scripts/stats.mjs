@@ -114,35 +114,11 @@ top.forEach((l, j) => {
 });
 if (!top.length) body += `<text class="jb" x="${barX}" y="${ry + 140}" font-size="15" fill="${C.mute}">No public code yet</text>`;
 
-// 3) contribution heatmap
-const hy = ry + rh + G, cell = 16, gap = 4.5, hw = W - 2 * P;
-const counts = days.map(d => d.contributionCount).filter(c => c > 0).sort((a, b) => a - b);
-const q = p => counts.length ? counts[Math.min(counts.length - 1, Math.floor(p * counts.length))] : 1;
-const [q1, q2, q3] = [q(0.25), q(0.5), q(0.75)];
-const LV = ['#16161F', '#3B0764', '#6D28D9', '#8B5CF6', '#DDD6FE'];
-const lvl = c => c === 0 ? 0 : c <= q1 ? 1 : c <= q2 ? 2 : c <= q3 ? 3 : 4;
-const gridW = weeks.length * (cell + gap) - gap, gx = P + (hw - gridW) / 2, gy = hy + 78;
-const hh = 78 + 7 * (cell + gap) + 50;
-body += tile(P, hy, hw, hh) + label(P + 26, hy + 40, '// CONTRIBUTION GRAPH');
-body += `<text class="jb" x="${W - P - 26}" y="${hy + 40}" text-anchor="end" font-size="14" fill="${C.mute}"><tspan fill="${C.text}">${fmt(cc.contributionCalendar.totalContributions)}</tspan> contributions in the last year</text>`;
-const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-let lastM = -1;
-weeks.forEach((w, wi) => {
-  const x = gx + wi * (cell + gap);
-  const m = new Date(w.contributionDays[0].date).getUTCMonth();
-  if (m !== lastM && wi < weeks.length - 2) { body += `<text class="jb" x="${x}" y="${gy - 12}" font-size="13" fill="${C.mute}">${MON[m]}</text>`; lastM = m; }
-  let col = '';
-  for (const d of w.contributionDays) col += `<rect x="${x}" y="${gy + d.weekday * (cell + gap)}" width="${cell}" height="${cell}" rx="4" fill="${LV[lvl(d.contributionCount)]}"/>`;
-  body += `<g class="fi" style="animation-delay:${(wi * 0.018).toFixed(3)}s">${col}</g>`;
-});
-const ly = gy + 7 * (cell + gap) + 22;
-body += `<text class="jb" x="${W - P - 26 - 5 * 20 - 50}" y="${ly + 12}" text-anchor="end" font-size="13" fill="${C.mute}">less</text>` +
-  LV.map((c, j) => `<rect x="${W - P - 26 - 5 * 20 - 40 + j * 20}" y="${ly}" width="16" height="16" rx="4" fill="${c}"/>`).join('') +
-  `<text class="jb" x="${W - P - 26 - 30}" y="${ly + 12}" font-size="13" fill="${C.mute}">more</text>`;
-const updated = new Date().toISOString().slice(0, 10);
-body += `<text class="jb" x="${P + 26}" y="${ly + 12}" font-size="13" fill="#52525B">auto-updated ${updated}</text>`;
+// meta for the contribution-graph wrapper
+fs.mkdirSync(OUT, { recursive: true });
+fs.writeFileSync(path.join(OUT, 'meta.json'), JSON.stringify({ total: cc.contributionCalendar.totalContributions, current, longest }));
 
-const H = hy + hh + P;
+const H = ry + rh + P;
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" fill="none"><style>${CSS}</style>
 <defs><linearGradient id="edge" x1="0" y1="0" x2="${W}" y2="${H}" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="${C.cyan}" stop-opacity=".45"/><stop offset=".5" stop-color="#fff" stop-opacity=".07"/><stop offset="1" stop-color="${C.violet}" stop-opacity=".55"/></linearGradient>
 <linearGradient id="num" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="${C.lilac}"/></linearGradient>

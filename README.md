@@ -38,7 +38,7 @@
 
 <img src="https://raw.githubusercontent.com/Hitarth2510/Hitarth2510/output/stats.svg" width="100%" alt="GitHub stats: contributions, commits, streak, top languages and contribution graph" />
 
-<img src="https://raw.githubusercontent.com/Hitarth2510/Hitarth2510/output/snake-dark.svg" width="100%" alt="Contribution snake" />
+<img src="https://raw.githubusercontent.com/Hitarth2510/Hitarth2510/output/graph.svg" width="100%" alt="Contribution graph with snake" />
 
 <br/><br/>
 
