@@ -19,6 +19,6 @@
 <text class="sg" x="53" y="132" font-size="54" font-weight="700" letter-spacing="-1.5" fill="url(#tt)">Dwarkesh Metal</text>
 <text class="sg" x="56" y="178" font-size="21" fill="#A1A1AA">A professional business website that builds a</text><text class="sg" x="56" y="208" font-size="21" fill="#A1A1AA">strong online presence with a clean, responsive UI.</text>
 <rect x="56" y="246" width="75.6" height="38" rx="19" fill="#22D3EE" fill-opacity=".12" stroke="#22D3EE" stroke-opacity=".55"/><text class="jb" x="93.8" y="270" text-anchor="middle" font-size="16" fill="#F4F4F5">HTML</text><rect x="141.6" y="246" width="65.2" height="38" rx="19" fill="#22D3EE" fill-opacity=".12" stroke="#22D3EE" stroke-opacity=".55"/><text class="jb" x="174.2" y="270" text-anchor="middle" font-size="16" fill="#F4F4F5">CSS</text><rect x="216.8" y="246" width="138" height="38" rx="19" fill="#22D3EE" fill-opacity=".12" stroke="#22D3EE" stroke-opacity=".55"/><text class="jb" x="285.8" y="270" text-anchor="middle" font-size="16" fill="#F4F4F5">JavaScript</text>
-<rect x="56" y="306" width="170" height="46" rx="23" fill="#22D3EE"/>
-<text class="jb" x="80" y="335" font-size="16" font-weight="500" letter-spacing="2" fill="#05050A">EXPLORE</text>
-<path d="M190 335 L202 323 M193 323 H202 V332" stroke="#05050A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<rect x="56" y="306" width="206" height="46" rx="23" fill="#22D3EE"/>
+<text class="jb" x="80" y="335" font-size="16" font-weight="500" letter-spacing="2" fill="#05050A">VISIT LIVE</text>
+<path d="M226 335 L238 323 M229 323 H238 V332" stroke="#05050A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>

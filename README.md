@@ -20,7 +20,7 @@
 
 <a href="https://github.com/Hitarth2510?tab=repositories"><img src="assets/p1-orivana.svg" width="100%" alt="Orivana" /></a>
 
-<a href="https://github.com/Hitarth2510?tab=repositories"><img src="assets/p2-dwarkesh.svg" width="100%" alt="Dwarkesh Metal" /></a>
+<a href="https://dwarkeshmetal.co.in/"><img src="assets/p2-dwarkesh.svg" width="100%" alt="Dwarkesh Metal" /></a>
 
 <a href="https://darooh.in/"><img src="assets/p3-darooh.svg" width="100%" alt="DaRooh" /></a>
 
@@ -36,10 +36,7 @@
 
 <img src="assets/h-stats.svg" width="100%" alt="GitHub stats" />
 
-<img src="./profile-summary-card-output/tokyonight/0-profile-details.svg" width="100%" alt="Profile details" />
-
-<img src="./profile-summary-card-output/tokyonight/3-stats.svg" width="49%" alt="Stats" />
-<img src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" width="49%" alt="Most committed languages" />
+<img src="https://raw.githubusercontent.com/Hitarth2510/Hitarth2510/output/stats.svg" width="100%" alt="GitHub stats: contributions, commits, streak, top languages and contribution graph" />
 
 <img src="https://raw.githubusercontent.com/Hitarth2510/Hitarth2510/output/snake-dark.svg" width="100%" alt="Contribution snake" />
 
